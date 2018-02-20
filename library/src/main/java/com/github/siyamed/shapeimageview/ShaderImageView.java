@@ -5,12 +5,12 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.widget.ImageView;
+import android.support.v7.widget.AppCompatImageView;
 
 import com.github.siyamed.shapeimageview.shader.ShaderHelper;
 
 @SuppressWarnings("WeakerAccess")
-public abstract class ShaderImageView extends ImageView {
+public abstract class ShaderImageView extends AppCompatImageView {
 
     private final static boolean DEBUG = false;
     private ShaderHelper pathHelper;
