@@ -10,9 +10,12 @@ android {
         versionCode Integer.parseInt(project.VERSION_CODE)
         versionName project.VERSION_NAME
     }
+    buildToolsVersion '26.0.2'
 }
 
 dependencies {
     compile group: 'net.sf.kxml', name: 'kxml2', version:'2.3.0'
+    compile rootProject.ext.supportLib
+    compile rootProject.ext.supportLibAppCompat
 }
 

@@ -2,6 +2,7 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
@@ -12,9 +13,17 @@ allprojects {
     repositories {
         jcenter()
         mavenCentral()
+        google()
     }
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.7'
+}
+ext {
+    supportLibVersion = '26.1.0'
+
+    supportLibGridLayout = "com.android.support:gridlayout-v7:$supportLibVersion"
+    supportLib = "com.android.support:support-v4:$supportLibVersion"
+    supportLibAppCompat = "com.android.support:appcompat-v7:$supportLibVersion"
 }
